@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors'); // Si necesitas habilitar CORS
 const app = express();
-const port = process.env.PORT || 5000; // Puerto de escucha
+const port = process.env.PORT || 3001; // Puerto de escucha
 
 // Middleware para habilitar CORS (si es necesario)
 app.use(cors());

@@ -1,4 +1,6 @@
-const Driver = require('../models/Driver'); 
+const express = require('express');
+const router = express.Router();
+const Driver = require('../../models/Driver'); 
 
 router.get('/', async (req, res) => {
   try {
@@ -15,3 +17,5 @@ router.get('/', async (req, res) => {
     res.status(500).json({ error: 'Error al obtener conductores' });
   }
 });
+
+module.exports = router;

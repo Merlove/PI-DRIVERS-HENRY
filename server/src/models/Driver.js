@@ -1,8 +1,9 @@
-const { DataTypes } = require('sequelize');
-// Exportamos una funcion que define el modelo
-// Luego le injectamos la conexion a sequelize.
+const { Sequelize, DataTypes } = require('sequelize');
+const sequelize = require('../db'); 
+
+
 module.exports = (sequelize) => {
-  // defino el modelo
+
   sequelize.define('Driver', {
     name: {
       type: DataTypes.STRING,
